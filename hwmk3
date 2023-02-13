@@ -1,0 +1,146 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+  int department;
+  int classNum;
+  int section;
+  string departmentName;
+  string className;
+  string sectionName;
+
+  cout << "Select a department: (1)Computer Science (2)Math (3)Science\n";
+  cin >> department;
+
+  if (department == 1) {
+    departmentName = "Computer Science";
+    cout << "Select a class: (1)Starting Computing (2)Data Structures (3)Algorithms\n";
+    cin >> classNum;
+    if (classNum == 1) {
+      className = "Starting Computing";
+      cout << "Select a section: (1)Section 100 (2)Section 200\n";
+      cin >> section;
+      if (section == 1) {
+        sectionName = "Section 100";
+      } else if (section == 2) {
+        sectionName = "Section 200";
+      } else {
+        cout << "Please enter a valid input." << endl;
+        return 0;
+      }
+    } else if (classNum == 2) {
+      className = "Data Structures";
+      cout << "Select a section: (1)Section 101 (2)Section 201\n";
+      cin >> section;
+      if (section == 1) {
+        sectionName = "Section 101";
+      } else if (section == 2) {
+        sectionName = "Section 201";
+      } else {
+        cout << "Please enter a valid input." << endl;
+        return 0;
+      }
+    } else if (classNum == 3) {
+      className = "Algorithms";
+      cout << "Select a section: (1)Section 102 (2)Section 202\n";
+      cin >> section;
+      if (section == 1) {
+        sectionName = "Section 102";
+      } else if (section == 2) {
+        sectionName = "Section 202";
+      } else {
+        cout << "Please enter a valid input." << endl;
+        return 0;
+      }
+    } else {
+      cout << "Please enter a valid input." << endl;
+      return 0;
+    }
+  } else if (department == 2) {
+    departmentName = "Math";
+    cout << "Select a class: (1)Calculus 1 (2)Calculus 2 (3)Linear Algebra\n";
+    cin >> classNum;
+    if (classNum == 1) {
+      className = "Calculus 1";
+      cout << "Select a section: (1)Section 400 (2)Section 500\n";
+      cin >> section;
+      if (section == 1) {
+        sectionName = "Section 400";
+      } else if (section == 2) {
+        sectionName = "Section 500";
+      } else {
+        cout << "Please enter a valid input." << endl;
+        return 0;
+      }
+    } else if (classNum == 2) {
+      className = "Calculus 2";
+      cout << "Select a section: (1)Section 401 (2)Section 501\n";
+      cin>> section;
+      if (section == 1) {
+        sectionName = "Section 401";
+      } else if (section == 2) {
+        sectionName = "Section 501";
+      } else {
+        cout << "Please enter a valid input." << endl;
+        return 0;
+      }
+    } else if (classNum == 3) {
+      className = "Linear Algebra";
+      cout << "Select a section: (1)Section 402 (2)Section 502\n";
+      cin >> section;
+      if (section == 1) {
+        sectionName = "Section 402";
+      } else if (section == 2) {
+        sectionName = "Section 502";
+      } else {
+        cout << "Please enter a valid input." << endl;
+        return 0;
+          
+      
+      }
+      
+    }
+        
+    }
+ else if (department == 3) {
+    departmentName = "Science";
+    cout << "Select a class: (1)General Chemistry 1 (2)Physics 1\n";
+    cin >> classNum;
+    if (classNum == 1) {
+      className = "General Chemistry 1";
+      cout << "Select a section: (1)Section 700 (2)Section 800\n";
+      cin >> section;
+      if (section == 1) {
+        sectionName = "Section 700";
+      } else if (section == 2) {
+        sectionName = "Section 800";
+      } else {
+        cout << "Please enter a valid input." << endl;
+        return 0;
+      }
+    } else if (classNum == 2) {
+      className = "Physics 1";
+      cout << "Select a section: (1)Section 701 (2)Section 801\n";
+      cin>> section;
+      if (section == 1) {
+        sectionName = "Section 701";
+      } else if (section == 2) {
+        sectionName = "Section 801";
+      } else {
+        cout << "Please enter a valid input." << endl;
+        return 0;
+      }
+    
+      
+      
+      
+    }
+        
+    }
+
+  cout << "You've been enrolled in " << sectionName << " of " << className << "!" << endl;
+
+  return 0;
+}
